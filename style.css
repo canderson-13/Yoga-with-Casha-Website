@@ -1,0 +1,182 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    background-color: #ece7e1;
+    color: #01160b;
+}
+
+.grid {
+    display: grid;
+    justify-items: stretch;
+}
+
+header {
+    text-align: center;
+    border-top: 0.3rem solid #01160b;
+    position: relative;
+    top: 4rem;
+}
+
+section {
+    position:relative;
+    top: 4rem;
+}
+
+footer {
+    position:relative;
+    top: 4rem;
+    width: 100%;
+    left:0;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #a4b79b;
+    color: white;
+    border-top: 0.3rem solid #dae5d4;
+}
+
+nav {
+    background-color: #a4b79b;
+    color: #ece7e1;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 0.3rem solid #dae5d4;
+    height: 4rem;
+}
+
+#hiddenMenu {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: 10;
+    background-color: #192a51;
+}
+
+.wideimg {
+    display: grid;
+    height: 100%;
+    text-align: center;
+}
+
+.widetextbox {
+    width: 90%;
+    left:5%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.subscribe {
+    width: 90%;
+    left:5%;
+}
+
+.subscribe h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+  }
+
+div.wrap {
+    width: 100%;
+    max-height: 100%;
+}
+
+.wrap img {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    max-height: 100%;
+}
+
+.wrap a img:nth-of-type(1) {
+    left: 0;
+}
+
+.wrap img:nth-of-type(1) {
+    right: 0;
+}
+
+.gridbuttons div {
+    background-color: #a4b79b;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #dae5d4;
+    opacity: 0.93;
+    box-shadow: 5px 5px 8px gray;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+.gridbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 1000px) {
+    .experience {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #button1 {
+        grid-column: 1 / span 1;
+    }
+
+    #button2 {
+        grid-column: 2 / span 1;
+    }
+
+    #button3 {
+        grid-column: 3 / span 1;
+    }
+
+    #button4 {
+        grid-column: 4 / span 1;
+    }
+
+    .about {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about #left {
+        grid-column: 1 / span 1;
+        
+    }
+
+    .about #right {
+        grid-column: 2 / span 1;
+        
+    }
+}
