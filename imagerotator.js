@@ -19,7 +19,7 @@ function checkOutBoundConditions() {
     // If index reaches the end, set
     // index to 0 again (recall index
     // starts from 0)
-    if(index === images.length) {
+    if(index === images.length-3) {
         index = 0
     }
     // If index is less than 0, set
