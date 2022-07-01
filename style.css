@@ -55,7 +55,8 @@ nav {
     top: 3rem;
     right: 0;
     z-index: 10;
-    background-color: #192a51;
+    background-color: #a4b79b;
+    list-style: none;
 }
 
 .wideimg {
@@ -180,3 +181,54 @@ p {
         
     }
 }
+
+#image-container img { /* sets image dimensions */
+    width: 600px;
+    height: 400px;
+    object-fit: cover; /* makes image cover these dimensions */
+}
+
+#carousel-container { /* set dimensions for enitre carousel container */
+    width: 600px;
+    height: 440px; /* +30px to make space for user controls */
+    overflow: hidden; /* Prevents seeing previous and next images  */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+#image-container {
+    /* flex properties set images to appear in a row
+    with no wrapping to a new line. Images keep original
+    size as these are fixed */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    /* Manages transition */
+    transition: transform 1s ease-in-out;
+}
+
+#user-controls { 
+    /* Buttons along rows with space between */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a:link {
+    color: #ece7e1;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #ece7e1;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #ece7e1;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #ece7e1;
+    text-decoration: none;
+  }
