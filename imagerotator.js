@@ -19,7 +19,7 @@ function checkOutBoundConditions() {
     // If index reaches the end, set
     // index to 0 again (recall index
     // starts from 0)
-    if(index === images.length-3) {
+    if(index === images.length-2) {
         index = 0
     }
     // If index is less than 0, set
@@ -33,6 +33,6 @@ function changeImage() {
     // Negative value on translateX shifts images left,
     // so show animates by multiplying the width of an 
     // image by index value
-    imageContainer.style.transform = `translateX(${-index * 600}px)`
+    imageContainer.style.transform = `translateX(${-index * window.innerWidth}px)`
 }
 
